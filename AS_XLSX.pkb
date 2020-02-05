@@ -1,6 +1,7 @@
 CREATE OR REPLACE PACKAGE BODY OD.as_xlsx
 is
 --
+-- desc
   c_LOCAL_FILE_HEADER        constant raw(4) := hextoraw( '504B0304' ); -- Local file header signature
   c_END_OF_CENTRAL_DIRECTORY constant raw(4) := hextoraw( '504B0506' ); -- End of central directory signature
 --
